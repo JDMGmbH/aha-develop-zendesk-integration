@@ -11,6 +11,7 @@ const TicketsTable = ({ items }) => {
       <table className="record-table record-table--settings-page">
         <thead>
           <tr>
+            <th>Ticket id</th>
             <th>Ticket name</th>
             <th>Customer</th>
             <th>Assignee</th>
@@ -20,6 +21,7 @@ const TicketsTable = ({ items }) => {
         <tbody>
           {items.map(item => (
             <tr key={item.ticket.id} className="zendesk-ticket">
+              <td>{item.ticket.id}</td>
               <td>
                 <a
                   target="_blank"
